@@ -114,7 +114,7 @@
     
     // 9.
     self.simpleBlock = ^(){
-        //NSLog(@"Print array %@", weakSelf.myArray);
+        NSLog(@"Print array %@", weakSelf.myArray);
         NSLog(@"Capturing Self %@", weakSelf);
         
         dispatch_async(dispatch_get_main_queue(), ^{
