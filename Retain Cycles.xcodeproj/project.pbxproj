@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48A659E1ECF028000EBF7BC /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A659D1ECF027F00EBF7BC /* InitialViewController.m */; };
+		D48A65A11ECF04E100EBF7BC /* SampleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A65A01ECF04E100EBF7BC /* SampleObject.m */; };
+		D48A65A41ECF0F9700EBF7BC /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A65A31ECF0F9700EBF7BC /* SomeViewController.m */; };
 		D4B0B6C41ECEBF2F00297590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C31ECEBF2F00297590 /* main.m */; };
 		D4B0B6C71ECEBF2F00297590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C61ECEBF2F00297590 /* AppDelegate.m */; };
-		D4B0B6CA1ECEBF2F00297590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C91ECEBF2F00297590 /* ViewController.m */; };
+		D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		D4B0B6CD1ECEBF2F00297590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6CB1ECEBF2F00297590 /* Main.storyboard */; };
 		D4B0B6CF1ECEBF2F00297590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6CE1ECEBF2F00297590 /* Assets.xcassets */; };
 		D4B0B6D21ECEBF2F00297590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6D01ECEBF2F00297590 /* LaunchScreen.storyboard */; };
@@ -17,12 +20,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D48A659C1ECF027F00EBF7BC /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		D48A659D1ECF027F00EBF7BC /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		D48A659F1ECF04E100EBF7BC /* SampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleObject.h; sourceTree = "<group>"; };
+		D48A65A01ECF04E100EBF7BC /* SampleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleObject.m; sourceTree = "<group>"; };
+		D48A65A21ECF0F9700EBF7BC /* SomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
+		D48A65A31ECF0F9700EBF7BC /* SomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeViewController.m; sourceTree = "<group>"; };
 		D4B0B6BF1ECEBF2F00297590 /* Retain Cycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retain Cycles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B0B6C31ECEBF2F00297590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4B0B6C51ECEBF2F00297590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4B0B6C61ECEBF2F00297590 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D4B0B6C81ECEBF2F00297590 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4B0B6C91ECEBF2F00297590 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4B0B6C81ECEBF2F00297590 /* RetainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainViewController.h; sourceTree = "<group>"; };
+		D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainViewController.m; sourceTree = "<group>"; };
 		D4B0B6CC1ECEBF2F00297590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4B0B6CE1ECEBF2F00297590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B0B6D11ECEBF2F00297590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,8 +71,14 @@
 			children = (
 				D4B0B6C51ECEBF2F00297590 /* AppDelegate.h */,
 				D4B0B6C61ECEBF2F00297590 /* AppDelegate.m */,
-				D4B0B6C81ECEBF2F00297590 /* ViewController.h */,
-				D4B0B6C91ECEBF2F00297590 /* ViewController.m */,
+				D48A659F1ECF04E100EBF7BC /* SampleObject.h */,
+				D48A65A01ECF04E100EBF7BC /* SampleObject.m */,
+				D48A659C1ECF027F00EBF7BC /* InitialViewController.h */,
+				D48A659D1ECF027F00EBF7BC /* InitialViewController.m */,
+				D48A65A21ECF0F9700EBF7BC /* SomeViewController.h */,
+				D48A65A31ECF0F9700EBF7BC /* SomeViewController.m */,
+				D4B0B6C81ECEBF2F00297590 /* RetainViewController.h */,
+				D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */,
 				D4B0B6DB1ECEC8D000297590 /* ParentChildReference.m */,
 				D4B0B6CB1ECEBF2F00297590 /* Main.storyboard */,
 				D4B0B6CE1ECEBF2F00297590 /* Assets.xcassets */,
@@ -153,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48A659E1ECF028000EBF7BC /* InitialViewController.m in Sources */,
 				D4B0B6DC1ECEC8D000297590 /* ParentChildReference.m in Sources */,
-				D4B0B6CA1ECEBF2F00297590 /* ViewController.m in Sources */,
+				D48A65A11ECF04E100EBF7BC /* SampleObject.m in Sources */,
+				D48A65A41ECF0F9700EBF7BC /* SomeViewController.m in Sources */,
+				D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */,
 				D4B0B6C71ECEBF2F00297590 /* AppDelegate.m in Sources */,
 				D4B0B6C41ECEBF2F00297590 /* main.m in Sources */,
 			);
@@ -313,6 +331,7 @@
 				D4B0B6D81ECEBF3000297590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

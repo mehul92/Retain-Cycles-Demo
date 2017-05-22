@@ -29,3 +29,10 @@
     NSLog(@"dealloc Department");
 }
 @end
+
+//Parent Child Reference
+/* Person * person = [[Person alloc] init];
+ Department * department = [[Department alloc] init];
+ person.department = department;
+ department.person = person;
+ */
