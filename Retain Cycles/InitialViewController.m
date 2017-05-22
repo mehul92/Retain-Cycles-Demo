@@ -7,6 +7,8 @@
 //
 
 #import "InitialViewController.h"
+#import "MyChildClass.h"
+#import "MyParentClass.h"
 
 @interface InitialViewController ()
 
@@ -18,6 +20,14 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor orangeColor];
+    
+    MyParentClass *newParent = [[MyParentClass alloc] init];
+    MyChildClass *newChild = [[MyChildClass alloc] init];
+    
+    newParent.Name = @"Johnny";
+    newParent.myChild = newChild;
+    
+    newChild.myParent = newParent;
 
 }
 

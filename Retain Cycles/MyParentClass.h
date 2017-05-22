@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MyChildClass.h"
 
+@class MyChildClass;
 @interface MyParentClass : NSObject
 
 @property (nonatomic, strong) NSString *Name;

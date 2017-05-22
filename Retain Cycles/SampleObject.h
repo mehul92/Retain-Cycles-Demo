@@ -12,5 +12,6 @@
 @interface SampleObject : NSObject
 
 - (void)sampleMethodWithCompletion:(void (^)(void))completionBlock;
+@property (nonatomic, copy) void (^completionBlock)(void);
 
 @end

@@ -10,6 +10,8 @@
 		D48A659E1ECF028000EBF7BC /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A659D1ECF027F00EBF7BC /* InitialViewController.m */; };
 		D48A65A11ECF04E100EBF7BC /* SampleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A65A01ECF04E100EBF7BC /* SampleObject.m */; };
 		D48A65A41ECF0F9700EBF7BC /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A65A31ECF0F9700EBF7BC /* SomeViewController.m */; };
+		D49947BA1ED2C25900D59C81 /* MyParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49947B91ED2C25900D59C81 /* MyParentClass.m */; };
+		D49947BD1ED2C2C000D59C81 /* MyChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49947BC1ED2C2C000D59C81 /* MyChildClass.m */; };
 		D4B0B6C41ECEBF2F00297590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C31ECEBF2F00297590 /* main.m */; };
 		D4B0B6C71ECEBF2F00297590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C61ECEBF2F00297590 /* AppDelegate.m */; };
 		D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -26,6 +28,10 @@
 		D48A65A01ECF04E100EBF7BC /* SampleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleObject.m; sourceTree = "<group>"; };
 		D48A65A21ECF0F9700EBF7BC /* SomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
 		D48A65A31ECF0F9700EBF7BC /* SomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeViewController.m; sourceTree = "<group>"; };
+		D49947B81ED2C22800D59C81 /* MyParentClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParentClass.h; sourceTree = "<group>"; };
+		D49947B91ED2C25900D59C81 /* MyParentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyParentClass.m; sourceTree = "<group>"; };
+		D49947BB1ED2C2A600D59C81 /* MyChildClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyChildClass.h; sourceTree = "<group>"; };
+		D49947BC1ED2C2C000D59C81 /* MyChildClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChildClass.m; sourceTree = "<group>"; };
 		D4B0B6BF1ECEBF2F00297590 /* Retain Cycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retain Cycles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B0B6C31ECEBF2F00297590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4B0B6C51ECEBF2F00297590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +86,10 @@
 				D4B0B6C81ECEBF2F00297590 /* RetainViewController.h */,
 				D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */,
 				D4B0B6DB1ECEC8D000297590 /* ParentChildReference.m */,
+				D49947B81ED2C22800D59C81 /* MyParentClass.h */,
+				D49947B91ED2C25900D59C81 /* MyParentClass.m */,
+				D49947BB1ED2C2A600D59C81 /* MyChildClass.h */,
+				D49947BC1ED2C2C000D59C81 /* MyChildClass.m */,
 				D4B0B6CB1ECEBF2F00297590 /* Main.storyboard */,
 				D4B0B6CE1ECEBF2F00297590 /* Assets.xcassets */,
 				D4B0B6D01ECEBF2F00297590 /* LaunchScreen.storyboard */,
@@ -170,9 +180,11 @@
 			files = (
 				D48A659E1ECF028000EBF7BC /* InitialViewController.m in Sources */,
 				D4B0B6DC1ECEC8D000297590 /* ParentChildReference.m in Sources */,
+				D49947BA1ED2C25900D59C81 /* MyParentClass.m in Sources */,
 				D48A65A11ECF04E100EBF7BC /* SampleObject.m in Sources */,
 				D48A65A41ECF0F9700EBF7BC /* SomeViewController.m in Sources */,
 				D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */,
+				D49947BD1ED2C2C000D59C81 /* MyChildClass.m in Sources */,
 				D4B0B6C71ECEBF2F00297590 /* AppDelegate.m in Sources */,
 				D4B0B6C41ECEBF2F00297590 /* main.m in Sources */,
 			);
@@ -294,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				INFOPLIST_FILE = "Retain Cycles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gl.retaincCycles.demo.Retain-Cycles";
@@ -305,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				INFOPLIST_FILE = "Retain Cycles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gl.retaincCycles.demo.Retain-Cycles";

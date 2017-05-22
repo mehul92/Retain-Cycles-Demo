@@ -6,8 +6,12 @@
 //  Copyright © 2017 Mehul Srivastava. All rights reserved.
 //
 
-#ifndef MyChildClass_h
-#define MyChildClass_h
+#import <Foundation/Foundation.h>
+#import "MyParentClass.h"
 
 
-#endif /* MyChildClass_h */
+@interface MyChildClass : NSObject
+
+@property (nonatomic) MyParentClass *myParent;
+
+@end

@@ -6,4 +6,8 @@
 //  Copyright © 2017 Mehul Srivastava. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MyChildClass.h"
+
+@implementation MyChildClass
+
+@end

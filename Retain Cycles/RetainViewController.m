@@ -36,10 +36,11 @@
 
     self.myArray = [NSArray arrayWithObjects:@"1",@"2",@"3", nil];
     anotherArray = [NSArray arrayWithObjects:@"1",@"2",@"3", nil];
-    self.myBoolValue = TRUE;
+    self.myBoolValue = 0;
     self.sampleObject = [[SampleObject alloc] init];
     self.someViewController = [[SomeViewController alloc] init];
 
+    /*
     
     // 1.
     //Referring self from Main queue
@@ -62,7 +63,7 @@
     }];
     
     
-    // 4.
+    // 4.   
     //Self referring from block saved as Ivar
     self.simpleBlock = ^(){
         NSLog(@"Capturing Self %@", self);
@@ -89,7 +90,7 @@
     //Self referring from Custom block saved as Ivar & from array which is a property
     self.simpleBlock = ^(){
         NSLog(@"Capturing Self %@", weakSelf);
-        NSLog(@"Value type property", self.myBoolValue);
+        NSLog(@"Value type property", _myBoolValue);
     };
 
   
@@ -155,8 +156,26 @@
     }];
 
     
+    
     // 14.
+    //
+    [self.sampleObject setCompletionBlock:^{
+        NSLog(@"Capturing Self %@", self);
+    }];
+    
+    
+    
+    
+    // 15.
+    //
     [self sampleMethodWhichRunsABlock];
+    
+    */
+    
+    
+    //16.
+    //
+    [self sampleMethodTakingSampleParameter:_myArray];
 }
 
 
@@ -170,6 +189,13 @@
     });
 
 }
+
+
+-(void)sampleMethodTakingSampleParameter: (NSArray*)myBoolValue {
+    [self.sampleObject sampleMethodWithCompletion:^{
+        NSLog(@"Capturing Self %@", myBoolValue);
+    }];
+};
 
 @end
 
