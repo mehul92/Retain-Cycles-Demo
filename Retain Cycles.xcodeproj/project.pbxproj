@@ -14,7 +14,7 @@
 		D49947BD1ED2C2C000D59C81 /* MyChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49947BC1ED2C2C000D59C81 /* MyChildClass.m */; };
 		D4B0B6C41ECEBF2F00297590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C31ECEBF2F00297590 /* main.m */; };
 		D4B0B6C71ECEBF2F00297590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C61ECEBF2F00297590 /* AppDelegate.m */; };
-		D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D4B0B6CA1ECEBF2F00297590 /* RetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B6C91ECEBF2F00297590 /* RetainViewController.m */; };
 		D4B0B6CD1ECEBF2F00297590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6CB1ECEBF2F00297590 /* Main.storyboard */; };
 		D4B0B6CF1ECEBF2F00297590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6CE1ECEBF2F00297590 /* Assets.xcassets */; };
 		D4B0B6D21ECEBF2F00297590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B0B6D01ECEBF2F00297590 /* LaunchScreen.storyboard */; };
